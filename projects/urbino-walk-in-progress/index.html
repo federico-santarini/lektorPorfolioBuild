@@ -63,91 +63,90 @@
   </div>
   <p id="slideCounter" class="text-end mt-2">x/x</p>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.querySelector('#carouselExample');
-    const totalSlides = document.querySelectorAll('.carousel-item').length;
-    const counter = document.querySelector('#slideCounter');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.querySelector('#carouselExample');
+      const totalSlides = document.querySelectorAll('.carousel-item').length;
+      const counter = document.querySelector('#slideCounter');
 
-    function updateCounter(index) {
-      counter.innerText = `${index + 1}/${totalSlides}`;
-    }
+      function updateCounter(index) {
+        counter.innerText = `${index + 1}/${totalSlides}`;
+      }
 
-    // Initialize counter on page load
-    let initialIndex = document.querySelector('.carousel-item.active').dataset.bsSlideTo || 0;
-    updateCounter(parseInt(initialIndex));
+      // Initialize counter on page load
+      let initialIndex = document.querySelector('.carousel-item.active').dataset.bsSlideTo || 0;
+      updateCounter(parseInt(initialIndex));
 
-    // Listen to carousel slide change event
-    carousel.addEventListener('slid.bs.carousel', (event) => {
-      updateCounter(event.to);
+      // Listen to carousel slide change event
+      carousel.addEventListener('slid.bs.carousel', (event) => {
+        updateCounter(event.to);
+      });
     });
-  });
-</script>
-    <div class="row mb-4">
-      <div class="col">
-        <h3 class="project-title">Urbino Walk in Progress</h3>
-      </div>
+  </script>
+  <div class="row mb-4">
+    <div class="col">
+      <h3 class="project-title">Urbino Walk in Progress</h3>
     </div>
-   
-    <div class="row">
-      <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
-        <p class="description">Wayfinding system for Urbino’s city composed of seven plates representing monumental buildings.</p>
-      </div>
-      <div class="col-12 d-none d-xxl-block col-xxl-2">
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
+      <p class="description">Wayfinding system for Urbino’s city composed of seven plates representing monumental buildings.</p>
+    </div>
+    <div class="col-12 d-none d-xxl-block col-xxl-2">
 
-      </div>
-      <div class="col-12 col-lg-10 col-xl-4 col-xxl-3">
-        <table class="table project-info">
-          <tbody>
-            
-            <tr>
-              <td class="col-6">Client</td>
-              <td class="col-6">Municipality of Urbino</td>
-            </tr>
-            
+    </div>
+    <div class="col-12 col-lg-10 col-xl-4 col-xxl-3">
+      <table class="table project-info">
+        <tbody>
+          
+          <tr>
+            <td class="col-6">Client</td>
+            <td class="col-6">Municipality of Urbino</td>
+          </tr>
+          
 
-            
-            <tr>
-              <td class="col-6">Location</td>
-              <td class="col-6">Urbino</td>
-            </tr>
-            
+          
+          <tr>
+            <td class="col-6">Location</td>
+            <td class="col-6">Urbino</td>
+          </tr>
+          
 
-            
-            <tr>
-              <td class="col-6">Year</td>
-              <td class="col-6">2016</td>
-            </tr>
-            
-            
-            
-            
-            
-            <tr>
-              <td class="col-6">Collaborators</td>
-              <td class="col-6">Marco Ferrari (creative director), Livia Shamir (project manager), Davide Belotti (designer), Andrea Vendetti (designer)</td>
-            </tr>
-            
+          
+          <tr>
+            <td class="col-6">Year</td>
+            <td class="col-6">2016</td>
+          </tr>
+          
 
-            
-            <tr>
-              <td class="col-6">Fields</td>
-              <td class="col-6">Wayfinding<br>Cartography<br>Data Visualisation</td>
-            </tr>
-            
+          
 
-            
-            <tr>
-              <td class="col-6">Tools</td>
-              <td class="col-6">Adobe Illustrator<br>QGIS</td>
-            </tr>
-            
+          
+          <tr>
+            <td class="col-6">Collaborators</td>
+            <td class="col-6">Marco Ferrari (creative director), Livia Shamir (project manager), Davide Belotti (designer), Andrea Vendetti (designer)</td>
+          </tr>
+          
 
-            
+          
+          <tr>
+            <td class="col-6">Fields</td>
+            <td class="col-6">Wayfinding<br>Cartography<br>Data Visualisation</td>
+          </tr>
+          
 
-          </tbody>
-        </table>
-        <!-- 
+          
+          <tr>
+            <td class="col-6">Tools</td>
+            <td class="col-6">Adobe Illustrator<br>QGIS</td>
+          </tr>
+          
+
+          
+
+        </tbody>
+      </table>
+      <!-- 
         <dl>
           <dt>Date
           <dd>Jan 31, 2016
@@ -155,10 +154,11 @@
           <dt>Project type
           <dd>Wayfinding
         </dl> -->
-      </div>
     </div>
+  </div>
+  
 
-
+  
       </main>
 
       <footer class="container-fluid p-4" >

@@ -85,12 +85,18 @@
   </script>
   <div class="row mb-4">
     <div class="col">
-      <h3 class="project-title">Yamal LNG Fleet</h3>
+      <h3 class="project-title">Young Matters — Chemical Bonds: Air Quality</h3>
     </div>
   </div>
   <div class="row">
     <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
-      <p class="description">This video has been realized as an experiment while I was developing my graduation project at Design Academy Eindhoven. It shows one year of AIS data from Yamal LNG fleet. The data has been kindly offered for research purposes from FleetMon.</p>
+      <p class="description">Young Matters is the pedagogical component of the Design Signals program, a summer school developed in partnership with the Politehnica University of Timișoara that uses pedagogy as a design method. The 2025 edition, titled Chemical Bonds, structured its investigation around chemistry as a framework for design inquiry—exploring how invisible material and environmental processes can be made legible, measurable, and publicly communicable.
+<br></br>
+The workshop Air Quality, developed together with Fabio Salvadori and engineer Marian-Emanuel Ionașcu, asked students to design a hardware device for deployment in the urban environment of Timișoara. The device was tasked with a specific communicative function: to translate real-time air quality data into a spatial signal, indicating whether the surrounding area—within a defined radius—met safety thresholds for the people present. The dataset underpinning the work was drawn from a dedicated monitoring network designed and developed by Ionașcu, which served as both the technical foundation and the conceptual starting point for the workshop.
+<br></br>
+The process moved between data systems and physical form, requiring students to navigate the gap between sensor output and public communication. Rather than producing visualizations in the conventional sense, the brief called for an object embedded in the city itself—one capable of operating autonomously, reading its environment, and responding to it in real time. This grounded the design process in questions of material choice, legibility at scale, and the relationship between technical precision and civic clarity.
+<br></br>
+By situating environmental data within the fabric of urban space, the workshop positioned the designed object as both instrument and statement—a device that monitors, but also makes an argument about what monitoring means and who it serves. The work engaged students across disciplines in the broader challenge of designing for environmental accountability in contexts where the data is present but its consequences remain largely invisible.</p>
     </div>
     <div class="col-12 d-none d-xxl-block col-xxl-2">
 
@@ -101,45 +107,40 @@
           
           <tr>
             <td class="col-6">Client</td>
-            <td class="col-6">self-initiated</td>
+            <td class="col-6">Faber</td>
           </tr>
           
 
           
           <tr>
             <td class="col-6">Location</td>
-            <td class="col-6">Eindhoven</td>
+            <td class="col-6">Timisoara</td>
           </tr>
           
 
           
           <tr>
             <td class="col-6">Year</td>
-            <td class="col-6">2020</td>
+            <td class="col-6">2025</td>
           </tr>
+          
+
           
 
           
           <tr>
-            <td class="col-6">Website</td>
-            <td class="col-6"><a target="_blank" href="https://github.com/federico-santarini/VesselsAnimation">github.com</a> </td>
+            <td class="col-6">Collaborators</td>
+            <td class="col-6">Fabio Salvadori</td>
           </tr>
-          
-
           
 
           
           <tr>
             <td class="col-6">Fields</td>
-            <td class="col-6">Data Visualisation</td>
+            <td class="col-6">Education<br>Information Design</td>
           </tr>
           
 
-          
-          <tr>
-            <td class="col-6">Tools</td>
-            <td class="col-6">D3.js</td>
-          </tr>
           
 
           
@@ -149,70 +150,13 @@
       <!-- 
         <dl>
           <dt>Date
-          <dd>Jan 31, 2020
-          
-          <dt>Website
-          <dd><a href="https://github.com/federico-santarini/VesselsAnimation">github.com</a>
+          <dd>Jun 1, 2025
           
           <dt>Project type
-          <dd>Data Visualisation
+          <dd>workshop
         </dl> -->
     </div>
   </div>
-  
-  
-  
-  <div class="row g-2 mb-4">
-    
-    
-    
-    
-    
-    <div class="col-12 col-lg-2">
-      <div class="video-thumb" data-modal="videoModal1">
-        <span class="video-play-btn">&#9654;</span>
-      </div>
-    </div>
-
-    <div class="video-modal" id="videoModal1">
-      <div class="video-modal-inner">
-        <iframe src="" data-src="https://player.vimeo.com/video/1185817377?title=0&amp;byline=0&amp;portrait=0&amp;controls=0?autoplay=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    
-    
-    
-  </div>
-
-  <script>
-    document.querySelectorAll('.video-thumb').forEach(function (thumb) {
-      thumb.addEventListener('click', function () {
-        const modal = document.getElementById(thumb.dataset.modal);
-        const iframe = modal.querySelector('iframe');
-        iframe.src = iframe.dataset.src;
-        modal.classList.add('active');
-      });
-    });
-
-    document.querySelectorAll('.video-modal').forEach(function (modal) {
-      modal.addEventListener('click', function (e) {
-        if (e.target === modal) {
-          modal.querySelector('iframe').src = '';
-          modal.classList.remove('active');
-        }
-      });
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.video-modal.active').forEach(function (modal) {
-          modal.querySelector('iframe').src = '';
-          modal.classList.remove('active');
-        });
-      }
-    });
-  </script>
   
 
   

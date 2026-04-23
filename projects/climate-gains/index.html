@@ -52,57 +52,57 @@
       
       
 
-        
-        
-          <div class="carousel-item active">
-            <img loading="lazy" src="climate-gains01.jpg" alt="" class="d-block w-100 active">
-          </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+      
+      
+      <div class="carousel-item active">
+        <img loading="lazy" src="climate-gains01.jpg" alt="" class="d-block w-100 active">
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
 
-        
-        
-        
-        
-          <div class="carousel-item">
-            <img loading="lazy" src="climate-gains02.jpg" alt="" class="d-block w-100 active">
-          </div>
-        
-        
-        
-          <div class="carousel-item">
-            <img loading="lazy" src="climate-gains03.jpg" alt="" class="d-block w-100 active">
-          </div>
-        
-        
-        
-          <div class="carousel-item">
-            <img loading="lazy" src="climate-gains04.jpg" alt="" class="d-block w-100 active">
-          </div>
-        
-        
-        
-          <div class="carousel-item">
-            <img loading="lazy" src="climate-gains05.jpg" alt="" class="d-block w-100 active">
-          </div>
-        
-        
-        
-          <div class="carousel-item">
-            <img loading="lazy" src="climate-gains06.jpg" alt="" class="d-block w-100 active">
-          </div>
-        
-        
+      
+      
+      
+      
+      <div class="carousel-item">
+        <img loading="lazy" src="climate-gains02.jpg" alt="" class="d-block w-100 active">
+      </div>
+      
+      
+      
+      <div class="carousel-item">
+        <img loading="lazy" src="climate-gains03.jpg" alt="" class="d-block w-100 active">
+      </div>
+      
+      
+      
+      <div class="carousel-item">
+        <img loading="lazy" src="climate-gains04.jpg" alt="" class="d-block w-100 active">
+      </div>
+      
+      
+      
+      <div class="carousel-item">
+        <img loading="lazy" src="climate-gains05.jpg" alt="" class="d-block w-100 active">
+      </div>
+      
+      
+      
+      <div class="carousel-item">
+        <img loading="lazy" src="climate-gains06.jpg" alt="" class="d-block w-100 active">
+      </div>
+      
+      
 
       
     </div>
@@ -117,35 +117,34 @@
   </div>
   <p id="slideCounter" class="text-end mt-2">x/x</p>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const carousel = document.querySelector('#carouselExample');
-    const totalSlides = document.querySelectorAll('.carousel-item').length;
-    const counter = document.querySelector('#slideCounter');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.querySelector('#carouselExample');
+      const totalSlides = document.querySelectorAll('.carousel-item').length;
+      const counter = document.querySelector('#slideCounter');
 
-    function updateCounter(index) {
-      counter.innerText = `${index + 1}/${totalSlides}`;
-    }
+      function updateCounter(index) {
+        counter.innerText = `${index + 1}/${totalSlides}`;
+      }
 
-    // Initialize counter on page load
-    let initialIndex = document.querySelector('.carousel-item.active').dataset.bsSlideTo || 0;
-    updateCounter(parseInt(initialIndex));
+      // Initialize counter on page load
+      let initialIndex = document.querySelector('.carousel-item.active').dataset.bsSlideTo || 0;
+      updateCounter(parseInt(initialIndex));
 
-    // Listen to carousel slide change event
-    carousel.addEventListener('slid.bs.carousel', (event) => {
-      updateCounter(event.to);
+      // Listen to carousel slide change event
+      carousel.addEventListener('slid.bs.carousel', (event) => {
+        updateCounter(event.to);
+      });
     });
-  });
-</script>
-    <div class="row mb-4">
-      <div class="col">
-        <h3 class="project-title">Climate Gains</h3>
-      </div>
+  </script>
+  <div class="row mb-4">
+    <div class="col">
+      <h3 class="project-title">Climate Gains</h3>
     </div>
-   
-    <div class="row">
-      <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
-        <p class="description">Climate Gains is an installation that quantifies the future carbon emissions linked to liquefied natural gas (LNG) shipments exported by Yamal LNG, a gas production facility located on the Russian Arctic coast. The project focuses on the shipping activity between June and August 2020, tracking cargo departures and destinations through a custom web scraper that collected and processed real-time maritime traffic data.
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
+      <p class="description">Climate Gains is an installation that quantifies the future carbon emissions linked to liquefied natural gas (LNG) shipments exported by Yamal LNG, a gas production facility located on the Russian Arctic coast. The project focuses on the shipping activity between June and August 2020, tracking cargo departures and destinations through a custom web scraper that collected and processed real-time maritime traffic data.
 <br><br>
 The resulting data was printed continuously using a thermal printer onto a single paper roll, forming a physical record of the emissions yet to be released—based on the assumption that all transported gas will eventually be combusted. Alongside this material output, the installation includes a video essay that contextualizes the dataset within a broader geopolitical and environmental narrative. The video addresses issues such as Arctic resource extraction, infrastructure development, and the global LNG market.
 <br><br>
@@ -153,62 +152,62 @@ By using data as both content and form, the installation reconfigures statistica
 <br><br>
 The work highlights how data-driven design can document not only what has happened, but also what is likely to happen—visualizing emissions as a future-oriented, yet traceable, outcome embedded in present-day logistics.
 </p>
-      </div>
-      <div class="col-12 d-none d-xxl-block col-xxl-2">
+    </div>
+    <div class="col-12 d-none d-xxl-block col-xxl-2">
 
-      </div>
-      <div class="col-12 col-lg-10 col-xl-4 col-xxl-3">
-        <table class="table project-info">
-          <tbody>
-            
-            <tr>
-              <td class="col-6">Client</td>
-              <td class="col-6">self initiated</td>
-            </tr>
-            
+    </div>
+    <div class="col-12 col-lg-10 col-xl-4 col-xxl-3">
+      <table class="table project-info">
+        <tbody>
+          
+          <tr>
+            <td class="col-6">Client</td>
+            <td class="col-6">self initiated</td>
+          </tr>
+          
 
-            
-            <tr>
-              <td class="col-6">Location</td>
-              <td class="col-6">Eindhoven</td>
-            </tr>
-            
+          
+          <tr>
+            <td class="col-6">Location</td>
+            <td class="col-6">Eindhoven</td>
+          </tr>
+          
 
-            
-            <tr>
-              <td class="col-6">Year</td>
-              <td class="col-6">2020</td>
-            </tr>
-            
-            
-            
-            
-            
+          
+          <tr>
+            <td class="col-6">Year</td>
+            <td class="col-6">2020</td>
+          </tr>
+          
 
-            
-            <tr>
-              <td class="col-6">Fields</td>
-              <td class="col-6">Data Journalism<br>Information Design<br>Data Analysis</td>
-            </tr>
-            
+          
 
-            
-            <tr>
-              <td class="col-6">Tools</td>
-              <td class="col-6">Python<br>QGIS<br>Adobe Illustrator<br>Adobe Premiere</td>
-            </tr>
-            
+          
 
-            
-            <tr>
-              <td class="col-6">Photography</td>
-              <td class="col-6">Federico Santarini, Ronald Smits</td>
-            </tr>
-            
+          
+          <tr>
+            <td class="col-6">Fields</td>
+            <td class="col-6">Data Journalism<br>Information Design<br>Data Analysis</td>
+          </tr>
+          
 
-          </tbody>
-        </table>
-        <!-- 
+          
+          <tr>
+            <td class="col-6">Tools</td>
+            <td class="col-6">Python<br>QGIS<br>Adobe Illustrator<br>Adobe Premiere</td>
+          </tr>
+          
+
+          
+          <tr>
+            <td class="col-6">Photography</td>
+            <td class="col-6">Federico Santarini, Ronald Smits</td>
+          </tr>
+          
+
+        </tbody>
+      </table>
+      <!-- 
         <dl>
           <dt>Date
           <dd>Jan 31, 2020
@@ -216,10 +215,11 @@ The work highlights how data-driven design can document not only what has happen
           <dt>Project type
           <dd>Installation
         </dl> -->
-      </div>
     </div>
+  </div>
+  
 
-
+  
       </main>
 
       <footer class="container-fluid p-4" >
