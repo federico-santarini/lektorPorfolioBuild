@@ -127,20 +127,12 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-lg-10 col-xl-8 col-xxl-7">
-      <p class="description">Air quality data is routinely made available through municipal portals and standardized monitoring formats, yet these systems tend to flatten the information they carry—reducing atmospheric conditions to indices that are technically precise but spatially and experientially mute. This project takes that gap as its starting point, exploring how environmental data can be recomposed into forms that are perceptible, legible, and present in the city rather than archived within it. Developed as part of the Chemical Bonds exhibition at Faber, a programme that confronts the tensions between chemistry as industrial infrastructure and chemistry as lived material reality, the work situates air quality within the broader question of what it means to make hidden bonds visible.
-<br></br>
-The work operates through two interconnected registers. Within the exhibition space, an animated visualization developed from data collected with portable sensors offers simultaneous micro and macro readings: the quantity of pollutants absorbed during a single breath, set against the spatial trajectory of the recorded path and its corresponding air quality index. This dual framing holds together the bodily scale of exposure and the urban scale of circulation—two dimensions of the same phenomenon that standard monitoring formats rarely address together.
-<br></br>
-Extending this logic into the city itself, three autonomous sensing units were installed at Faber, the city hall, and the university campus. Each device measures real-time air quality conditions and visualizes the resulting data on-site, enabling passersby to encounter localized atmospheric information directly, without mediation through a screen or portal. A dedicated monitoring station, operational from September 26th to November 11th, tracked a full suite of pollutants—CO, NO₂, SO₂, O₃, PM1, PM2.5, and PM10—streaming live data to a connected indoor display terminal.
-<br></br>
-Together, the interventions position air quality not as a dataset to be consulted but as a condition to be experienced. By embedding measurement and representation within the same urban environment being monitored, the project makes the invisible chemistry of the city's atmosphere into a form of public record—one that invites not only awareness, but also reflection on what it means to share air.
-</p>
-    </div>
-    <div class="col-12 d-none d-xxl-block col-xxl-2">
 
-    </div>
-    <div class="col-12 col-lg-10 col-xl-4 col-xxl-3">
+    <!-- Spacer -->
+    <div class="col-xxl-2 d-none d-xxl-block order-2"></div>
+
+    <!-- Right: project info -->
+    <div class="col-12 col-lg-10 col-xl-4 col-xxl-3 order-3">
       <table class="table project-info">
         <tbody>
           
@@ -196,71 +188,77 @@ Together, the interventions position air quality not as a dataset to be consulte
 
         </tbody>
       </table>
-      <!-- 
-        <dl>
-          <dt>Date
-          <dd>Sep 1, 2025
-          
-          <dt>Project type
-          <dd>Installation
-        </dl> -->
     </div>
-  </div>
-  
-  
-  
-  <div class="row g-2 mb-4">
-    
-    
-    
-    
-    
-    <div class="col-12 col-lg-2">
-      <div class="video-thumb" data-modal="videoModal1">
-        <span class="video-play-btn">&#9654;</span>
+
+    <!-- Left: description + videos -->
+    <div class="col-12 col-lg-10 col-xl-8 col-xxl-7 order-1">
+      <p class="description">Air quality data is routinely made available through municipal portals and standardized monitoring formats, yet these systems tend to flatten the information they carry—reducing atmospheric conditions to indices that are technically precise but spatially and experientially mute. This project takes that gap as its starting point, exploring how environmental data can be recomposed into forms that are perceptible, legible, and present in the city rather than archived within it. Developed as part of the Chemical Bonds exhibition at Faber, a programme that confronts the tensions between chemistry as industrial infrastructure and chemistry as lived material reality, the work situates air quality within the broader question of what it means to make hidden bonds visible.
+<br></br>
+The work operates through two interconnected registers. Within the exhibition space, an animated visualization developed from data collected with portable sensors offers simultaneous micro and macro readings: the quantity of pollutants absorbed during a single breath, set against the spatial trajectory of the recorded path and its corresponding air quality index. This dual framing holds together the bodily scale of exposure and the urban scale of circulation—two dimensions of the same phenomenon that standard monitoring formats rarely address together.
+<br></br>
+Extending this logic into the city itself, three autonomous sensing units were installed at Faber, the city hall, and the university campus. Each device measures real-time air quality conditions and visualizes the resulting data on-site, enabling passersby to encounter localized atmospheric information directly, without mediation through a screen or portal. A dedicated monitoring station, operational from September 26th to November 11th, tracked a full suite of pollutants—CO, NO₂, SO₂, O₃, PM1, PM2.5, and PM10—streaming live data to a connected indoor display terminal.
+<br></br>
+Together, the interventions position air quality not as a dataset to be consulted but as a condition to be experienced. By embedding measurement and representation within the same urban environment being monitored, the project makes the invisible chemistry of the city's atmosphere into a form of public record—one that invites not only awareness, but also reflection on what it means to share air.
+</p>
+
+      
+      
+      
+      <div class="row g-2 mb-4">
+        
+        
+        
+        
+        
+        <div class="col-12 col-lg-2">
+          <div class="video-thumb" data-modal="videoModal1">
+            <span class="video-play-btn">&#9654;</span>
+          </div>
+        </div>
+
+        <div class="video-modal" id="videoModal1">
+          <div class="video-modal-inner">
+            <iframe src="" data-src="https://player.vimeo.com/video/1185821996?title=0&amp;byline=0&amp;portrait=0&amp;controls=0?autoplay=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        
+        
+        
       </div>
-    </div>
 
-    <div class="video-modal" id="videoModal1">
-      <div class="video-modal-inner">
-        <iframe src="" data-src="https://player.vimeo.com/video/1185821996?title=0&amp;byline=0&amp;portrait=0&amp;controls=0?autoplay=1" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    
-    
-    
-  </div>
-
-  <script>
-    document.querySelectorAll('.video-thumb').forEach(function (thumb) {
-      thumb.addEventListener('click', function () {
-        const modal = document.getElementById(thumb.dataset.modal);
-        const iframe = modal.querySelector('iframe');
-        iframe.src = iframe.dataset.src;
-        modal.classList.add('active');
-      });
-    });
-
-    document.querySelectorAll('.video-modal').forEach(function (modal) {
-      modal.addEventListener('click', function (e) {
-        if (e.target === modal) {
-          modal.querySelector('iframe').src = '';
-          modal.classList.remove('active');
-        }
-      });
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.video-modal.active').forEach(function (modal) {
-          modal.querySelector('iframe').src = '';
-          modal.classList.remove('active');
+      <script>
+        document.querySelectorAll('.video-thumb').forEach(function (thumb) {
+          thumb.addEventListener('click', function () {
+            const modal = document.getElementById(thumb.dataset.modal);
+            const iframe = modal.querySelector('iframe');
+            iframe.src = iframe.dataset.src;
+            modal.classList.add('active');
+          });
         });
-      }
-    });
-  </script>
-  
+
+        document.querySelectorAll('.video-modal').forEach(function (modal) {
+          modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+              modal.querySelector('iframe').src = '';
+              modal.classList.remove('active');
+            }
+          });
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') {
+            document.querySelectorAll('.video-modal.active').forEach(function (modal) {
+              modal.querySelector('iframe').src = '';
+              modal.classList.remove('active');
+            });
+          }
+        });
+      </script>
+      
+    </div>
+
+  </div>
 
   
       </main>
